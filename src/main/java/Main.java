@@ -30,6 +30,7 @@ public class Main {
         final int[] resParallel = new int[max];
 
         System.out.format("Parallel using %s... ", Device.best().getShortDescription());
+        start = System.currentTimeMillis();
         Kernel kernel = new Kernel() {
             @Override
             public void run() {
@@ -44,7 +45,6 @@ public class Main {
             }
         };
         Range range = Range.create(resParallel.length);
-        start = System.currentTimeMillis();
         kernel.execute(range);
         System.out.format("finished in %d ms\n", System.currentTimeMillis() - start);
 
