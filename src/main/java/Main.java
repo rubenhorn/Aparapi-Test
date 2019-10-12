@@ -54,7 +54,7 @@ public class Main {
         for (int i = 0; i < max; i++) {
             if(resParallel[i] != resSequential[i]) {
                 throw new RuntimeException(String.format(
-                    "Different results for x^2 with x=%d\n(Got %d from parallel code and %d from sequential code)",
+                    "Different results for %d\n(Got %d from parallel code and %d from sequential code)",
                     i, resParallel[i], resSequential[i]));
             }
         }
