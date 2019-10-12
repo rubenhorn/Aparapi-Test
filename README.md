@@ -1,2 +1,2 @@
 # Aparapi-Test
-A simple test of the Aparapi library for GPGPU using Java
+A simple test of the [Aparapi](https://github.com/Syncleus/aparapi) library for GPGPU using Java
